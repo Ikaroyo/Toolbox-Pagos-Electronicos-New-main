@@ -1,0 +1,64 @@
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: "Lato", sans-serif;
+}
+
+#dropArea {
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    width: 400px;
+    height: 200px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 40px;
+    cursor: pointer;
+}
+
+#dataTable {
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+#dataTable th,
+#dataTable td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    font-weight: 500;
+}
+
+#dataTable th {
+    background-color: #444;
+    color: #fff;
+}
+
+#dataTable tr:nth-child(even) {
+    background-color: #383838;
+}
+
+#dataTable tr:nth-child(odd) {
+    background-color: #4e4e4e;
+}
+
+button {
+    background-color: #e44545;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px auto;
+    padding: 10px 25px;
+    text-align: center;
+    text-transform: uppercase;
+    /* locate the button in the middle of the page */
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}

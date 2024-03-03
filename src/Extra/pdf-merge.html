@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDF Merge</title>
+    <!-- icon title -->
+
+    <link rel="icon" href="pdf-merge/src/logo-title.png" />
+
+    <link rel="stylesheet" href="pdf-merge/css/styles.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <br />
+      <h1>Combinar archivos PDF</h1>
+      <div id="drag-drop-zone">
+        Arrastra y suelta tus archivos PDF aquí.
+
+        <button id="load-files" class="load-files" style="margin: 10px">
+          Buscar archivos
+        </button>
+      </div>
+      <h2>
+        Cantidad de Archivos PDF:
+        <div id="pdf-count">0</div>
+      </h2>
+
+      <div id="buttons" class="buttons">
+        <button class="disabled" id="sort-button">
+          <img src="pdf-merge/src/sort.png" alt="" />Ordenar
+        </button>
+        <button class="disabled" id="merge-button">
+          <img src="pdf-merge/src/merge.png" alt="" />Unir
+        </button>
+        <button class="disabled" id="delete-button">
+          <img src="pdf-merge/src/delete.png" alt="" />Borrar
+        </button>
+      </div>
+      <hr />
+    </div>
+
+    <div class="second">
+      <div id="file-list">
+        <ul class="pdf-list" id="pdf-list">
+          Aun no has subido archivos
+        </ul>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/pdf-lib/dist/pdf-lib.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pdf-lib/dist/pdf-lib.min.js"></script>
+    <script src="pdf-merge/js/script.js"></script>
+  </body>
+</html>

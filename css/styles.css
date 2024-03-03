@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  /* Añadido */
+  flex-direction: column;
+  /* Añadido */
+  height: 100vh;
+  /* Añadido */
+  overflow: hidden;
+  /* disable scroll bar */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+#iframe-container {
+  flex-grow: 1;
+  /* Añadido */
+}
+
+#content iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+  overflow: auto;
+}

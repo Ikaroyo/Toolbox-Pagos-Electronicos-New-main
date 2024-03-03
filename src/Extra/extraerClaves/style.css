@@ -1,0 +1,189 @@
+    /* Estilos generales de la página */
+    body {
+        background-color: #222;
+        color: #fff;
+        font-family: "Lato", sans-serif;
+    }
+
+    /* Estilos para la tabla */
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        max-width: auto;
+        margin: 0 auto;
+        background-color: #fff;
+        color: #fff;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        text-align: center;
+        border-bottom: 1px solid #333;
+    }
+
+    th {
+        background-color: #333;
+        justify-items: auto;
+    }
+
+    tr:nth-child(even) {
+        background-color: #444;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #555;
+    }
+
+    /* Estilos para la búsqueda */
+    input[type="text"]#busqueda {
+        background-color: #f2f2f2;
+        border: none;
+        color: #555;
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.2) inset;
+    }
+
+    input[type="text"]#busqueda:focus {
+        outline: none;
+    }
+
+    input[type="submit"] {
+        background-color: #f2f2f2;
+        border: none;
+        color: #555;
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.2) inset;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #e0e0e0;
+    }
+
+    .container-busqueda {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .container-busqueda input[type="text"] {
+        flex-grow: 0.5;
+        margin-right: 0.5rem;
+        color: #555;
+    }
+
+    .container-busqueda input[type="submit"] {
+        margin-right: 0.5rem;
+    }
+
+    /* Estilos para botón */
+    button {
+        display: flex;
+        justify-content: center;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 5px;
+        width: 50%;
+    }
+
+    button:hover {
+        background-color: #555;
+        cursor: pointer;
+    }
+
+    tr:hover {
+        color: #000000;
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+    }
+
+    #search-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    #busqueda:hover {
+        outline: none;
+        border: 1px solid #a1d7ff;
+        box-shadow: 0 0 5px #a1d7ff;
+        border-radius: 5px;
+        cursor: text;
+        color: #000;
+    }
+
+    #busqueda:focus {
+        outline: none;
+        border: 1px solid #a1d7ff;
+        box-shadow: 0 0 5px #a1d7ff;
+        border-radius: 5px;
+    }
+
+    #input-cuenta {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        box-shadow: none;
+        outline: none;
+        width: 300px;
+    }
+
+    #input-cuenta:focus {
+        border-color: #a1d7ff;
+    }
+
+    /* loader */
+    .loader {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        border: 16px solid #f3f3f3;
+        border-top: 16px solid #3498db;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        animation: spin 2s linear infinite;
+        z-index: 9999;
+
+    }
+
+    /* id loader is a black transparent box */
+    #loader {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 9998;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .red {
+        font-weight: bold;
+        color: lightcoral;
+    }

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>PE-OSM Toolbox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="src/logo-title.png" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <a href="" class="navbar-logo"
+        ><i class="material-icons"
+          ><img class="logo" src="src/logo-osm.png" alt="logo-osm" /></i
+      ></a>
+      <ul class="navbar-links">
+        <li class="navbar-dropdown">
+          <a href="">Banelco</a>
+          <div class="dropdown">
+            <a
+              href="#"
+              class="link-btn"
+              onclick="loadPage('BANELCO - Cob/index.html')"
+              >Banelco Cob</a
+            >
+            <a
+              href="#"
+              class="link-btn"
+              onclick="loadPage('BANELCO - Liq/index.html')"
+              >Banelco Liq</a
+            >
+          </div>
+        </li>
+        <li class="navbar-dropdown">
+          <a href="">Rapipago</a>
+          <div class="dropdown">
+            <a
+              href="#"
+              class="link-btn"
+              onclick="loadPage('RAPIPAGO/index.html')"
+              >Rapipago</a
+            >
+          </div>
+        </li>
+        <li class="navbar-dropdown">
+          <a href="">Municipalidad</a>
+          <div class="dropdown">
+            <a
+              href="#"
+              class="link-btn"
+              onclick="loadPage('MUNICIPALIDAD/index.html')"
+              >Municipalidad</a
+            >
+          </div>
+        </li>
+        <li class="navbar-dropdown">
+          <a href="">Extra</a>
+          <div class="dropdown">
+            <a
+              href="#"
+              class="link-btn"
+              onclick="loadPage('Extra/extraerClaves.html')"
+              >Extraer Claves pagomiscuentas</a
+            >
+            <a
+              href="#"
+              class="link-btn"
+              onclick="loadPage('Extra/pdf-merge.html')"
+              >Combinar PDF</a
+            >
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="iframe-container"></div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

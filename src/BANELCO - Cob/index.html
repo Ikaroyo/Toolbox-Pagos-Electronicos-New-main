@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>archivos cob</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  </head>
+  <body>
+    <div id="drop-area">
+      <p>Arrastra y suelta tus archivos aquí</p>
+      <input type="file" id="file-input" multiple />
+      <ul id="file-list"></ul>
+    </div>
+
+    <table id="result-table">
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Archivo</th>
+          <th>Cupones</th>
+          <th>Cobrado</th>
+        </tr>
+      </thead>
+      <tbody id="result-body"></tbody>
+    </table>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

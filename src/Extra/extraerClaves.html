@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Tabla de emisión</title>
+  <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+  <link rel="stylesheet" href="extraerClaves/style.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <div class="container-busqueda">
+    <input type="text" id="busqueda" name="busqueda" placeholder="Ingresa el numero de cuenta 0000001/001" />
+    <input type="submit" id="buscar" value="Buscar" />
+    <input type="submit" id="generar" value="Generar Planilla Excel" />
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Cuenta</th>
+        <th>Usuario</th>
+        <th>Dirección</th>
+        <th>Recibo</th>
+        <th>Clave Pago Electrónico</th>
+        <th>Archivo</th>
+        <th>Página</th>
+        <th>Tipo</th>
+      </tr>
+    </thead>
+    <tbody id="tablaEmision"></tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.7.107/pdf.min.js"></script>
+  <script src="extraerClaves/script.js"></script>
+
+  <!-- Loader -->
+  <div id="loader" style="display: none;">
+    <div class="loader"></div>
+  </div>
+
+  <!---->
+</body>
+
+</html>
